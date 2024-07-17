@@ -1,9 +1,10 @@
-import { Sofia_Sans_Extra_Condensed } from "next/font/google";
+import { Sofia_Sans_Extra_Condensed as FontSans } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 
-const sofiaSansExtraCondensed = Sofia_Sans_Extra_Condensed({
+const fontSans = FontSans({
   subsets: ["latin"],
+  variable: "--font-sans",
 });
 
 export const metadata = {
@@ -15,7 +16,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={sofiaSansExtraCondensed.className}>
+      <body
+        className={fontSans.className}
+      >
         <Header />
         {children}
       </body>
