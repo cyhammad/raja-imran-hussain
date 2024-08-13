@@ -1,3 +1,4 @@
+import AboutUsSection from "@/components/AboutUsSection";
 import Banner from "@/components/Banner";
 import HomeBlogSection from "@/components/HomeBlogSection";
 import MoreAboutStrip from "@/components/MoreAboutStrip";
@@ -8,6 +9,7 @@ export default function Home() {
     <main className="flex h-full min-h-screen w-full flex-col items-center">
       <Banner />
       <MoreAboutStrip />
+      <AboutUsSection />
       <HomeBlogSection />
     </main>
   );
