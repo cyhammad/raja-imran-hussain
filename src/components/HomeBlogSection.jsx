@@ -17,7 +17,7 @@ const HomeBlogSection = () => {
             uncertainty. In this blog post, we'll delve into the current state
             of Pakistan's political situation, the role of the judiciary, and
             the implications for democracy."
-            imgUrl="/award-1.jpeg"
+            imgUrl="/quagmire_full.jpg"
         />
         <BlogCard
           title="Pakistan's Inflation Crisis: A Heavy Burden on Local People"
@@ -31,7 +31,7 @@ const HomeBlogSection = () => {
           inflation crisis on local people, with a focus on the
           electricity industry, unemployment, and the broader economic
           implications.`}
-          imgUrl="/award-2.jpeg"
+          imgUrl="/protest.jpeg"
         />
       </div>
     </div>

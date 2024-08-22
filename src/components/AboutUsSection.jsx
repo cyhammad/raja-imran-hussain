@@ -5,7 +5,7 @@ const AboutUsSection = () => {
     <section className="flex w-full flex-col items-center justify-center overflow-hidden border-b border-primary md:border-none">
       <div className="grid w-full md:grid-cols-2">
         <Image
-          src="/speech.jpeg"
+          src="/who-am-i.jpg"
           quality={100}
           className="h-full w-full"
           alt="speech"

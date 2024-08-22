@@ -1,10 +1,20 @@
+import Image from "next/image";
+
 const BlogCard = ({ title = "", intro = "", imgUrl = "" }) => {
   return (
     <div className="grid grid-cols-10 gap-8 border-b border-black/10 pb-10">
-      <div
+      <Image
+        src={imgUrl}
+        quality={100}
+        className="col-span-10 md:col-span-4"
+        alt="blog"
+        width={500}
+        height={500}
+      />
+      {/* <div
         className="col-span-10 h-[280px] w-full rounded-2xl border border-black/10 bg-cover bg-center bg-no-repeat md:col-span-4"
         style={{ backgroundImage: `url(${imgUrl})` }}
-      ></div>
+      ></div> */}
       <div className="col-span-10 flex flex-col justify-between gap-2 md:col-span-6">
         <div className="flex flex-col gap-2">
           <h1 className="text-5xl font-bold">{title}</h1>
