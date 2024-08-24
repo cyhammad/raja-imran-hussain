@@ -1,6 +1,8 @@
 import { ArrowRight } from "lucide-react";
 import Image from "next/image";
 import { facebookIcon, instaIcon, twitterIcon, youtubeIcon } from "./icons";
+import Link from "next/link";
+import { fbLink, instaLink, twitterLink, youtubeLink } from "@/lib/links";
 
 const Banner = () => {
   return (
@@ -8,10 +10,18 @@ const Banner = () => {
       <section className="flex w-full max-w-7xl flex-col-reverse gap-10 px-5 py-20 sm:flex-row">
         <div className="flex w-full flex-col gap-3">
           <div className="flex items-center gap-3">
-            <button className="rounded-full p-1">{instaIcon}</button>
-            <button className="rounded-full p-1">{facebookIcon}</button>
-            <button className="rounded-full p-1">{twitterIcon}</button>
-            <button className="rounded-full p-1">{youtubeIcon}</button>
+            <Link href={instaLink} className="rounded-full p-1">
+              {instaIcon}
+            </Link>
+            <Link href={fbLink} className="rounded-full p-1">
+              {facebookIcon}
+            </Link>
+            <Link href={twitterLink} className="rounded-full p-1">
+              {twitterIcon}
+            </Link>
+            <Link href={youtubeLink} className="rounded-full p-1">
+              {youtubeIcon}
+            </Link>
           </div>
           <div className="w-full text-5xl font-bold md:text-6xl lg:text-7xl">
             Hey there, <br />
